@@ -1,12 +1,14 @@
 int kurz = 250;
 int lang = 2000;
 
+
 void setup() {
- pinMode(D4, OUTPUT);
+  pinMode(13, OUTPUT);
+
 }
 
 void loop() {
-  Ledswitch(kurz); //Anfang erstes Wort
+ Ledswitch(kurz); //Anfang erstes Wort
   Ledswitch(kurz);
   Ledswitch(kurz);
   Ledswitch(kurz);
@@ -44,11 +46,13 @@ void loop() {
   Ledswitch(lang);
   Ledswitch(kurz);
   Ledswitch(kurz);  //Ende zweites Wort
-}
 
+} 
 void Ledswitch(int timing){
-  digitalWrite(D4, LOW);
+  digitalWrite(13, LOW);
   delay(timing);
-  digitalWrite(D4, HIGH);
+  digitalWrite(13, HIGH);
   delay(kurz);
-}
+} 
+
+
