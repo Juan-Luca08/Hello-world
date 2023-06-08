@@ -3,7 +3,7 @@ int lang = 2000;
 
 
 void setup() {
-  pinMode(13, OUTPUT);
+   pinMode(12, OUTPUT);
 
 }
 
@@ -49,9 +49,9 @@ void loop() {
 
 } 
 void Ledswitch(int timing){
-  digitalWrite(13, LOW);
-  delay(timing);
-  digitalWrite(13, HIGH);
+   digitalWrite(12, LOW);
+   delay(timing);
+   digitalWrite(12, HIGH);
   delay(kurz);
 } 
 
